@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://ibscpn5fugds"]
+
+[ext_resource type="PackedScene" uid="uid://dlht4f032gs0m" path="res://Score/score_ui.tscn" id="1_2760m"]
+[ext_resource type="Script" path="res://Chatomon/click_viewport.gd" id="1_ex540"]
+[ext_resource type="Resource" uid="uid://clallafxvyok0" path="res://Score/player_score.tres" id="3_y6ifp"]
+
+[node name="Chatomon-viewport" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScoreUi" parent="." instance=ExtResource("1_2760m")]
+layout_mode = 2
+
+[node name="Click" type="Control" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("1_ex540")
+score = ExtResource("3_y6ifp")
+
+[node name="Clique-aqui" type="ColorRect" parent="Click"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="gui_input" from="Click" to="Click" method="_on_gui_input"]
