@@ -21,8 +21,12 @@ func add_points(value: float):
 	on_points_changed.emit(points)
 
 
+func can_spend(value: float) -> bool:
+	return value <= points
+
+
 func spend_points(value: float) -> bool:
-	if value >= points:
+	if can_spend(value):
 		points -= value
 		on_points_changed.emit(points)
 		return true

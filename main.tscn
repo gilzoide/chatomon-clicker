@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dnh6s1wumfimc"]
 
 [ext_resource type="PackedScene" uid="uid://ibscpn5fugds" path="res://Chatomon/chatomon_viewport.tscn" id="1_1omfi"]
-[ext_resource type="PackedScene" uid="uid://byciqjfslrf5n" path="res://Powerups/powerup_list.tscn" id="2_8wudt"]
+[ext_resource type="PackedScene" uid="uid://byciqjfslrf5n" path="res://Powerups/UI/powerup_list.tscn" id="2_8wudt"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
