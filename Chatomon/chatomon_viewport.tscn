@@ -32,7 +32,7 @@ size_flags_vertical = 3
 script = ExtResource("1_ex540")
 score = ExtResource("3_y6ifp")
 
-[node name="Clique-aqui" type="ColorRect" parent="Click"]
+[node name="CliqueHere" type="ColorRect" parent="Click"]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -45,7 +45,7 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
-[node name="Smiles-anchor" type="Control" parent="Click/Clique-aqui"]
+[node name="SmilesAnchor" type="Control" parent="Click/CliqueHere"]
 layout_mode = 1
 anchor_left = 0.5
 anchor_top = 0.2
@@ -58,7 +58,7 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Smiles-particles" type="CPUParticles2D" parent="Click/Clique-aqui/Smiles-anchor"]
+[node name="SmilesParticles" type="CPUParticles2D" parent="Click/CliqueHere/SmilesAnchor"]
 emitting = false
 amount = 4
 one_shot = true
@@ -72,4 +72,4 @@ angle_min = -90.0
 angle_max = 90.0
 color_ramp = SubResource("Gradient_k2ofm")
 
-[connection signal="on_click" from="Click" to="Click/Clique-aqui/Smiles-anchor/Smiles-particles" method="set_emitting" binds= [true]]
+[connection signal="on_click" from="Click" to="Click/CliqueHere/SmilesAnchor/SmilesParticles" method="set_emitting" binds= [true]]
