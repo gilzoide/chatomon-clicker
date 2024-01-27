@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://rhmlabaysueg"]
+
+[ext_resource type="Script" path="res://Score/UI/automatic_score_timer.gd" id="1_l5on4"]
+[ext_resource type="Resource" uid="uid://clallafxvyok0" path="res://Score/player_score.tres" id="2_n6n0v"]
+
+[node name="AutomaticScore" type="Timer"]
+autostart = true
+script = ExtResource("1_l5on4")
+score = ExtResource("2_n6n0v")
+
+[connection signal="timeout" from="." to="." method="_on_timer_timed_out"]
