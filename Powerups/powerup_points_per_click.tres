@@ -1,10 +1,10 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://uy0n8bqdiwu6"]
+[gd_resource type="Resource" script_class="PowerUpPointsPerClick" load_steps=2 format=3 uid="uid://uy0n8bqdiwu6"]
 
 [ext_resource type="Script" path="res://Powerups/powerup_points_per_click.gd" id="1_jkj3q"]
 
 [resource]
 script = ExtResource("1_jkj3q")
-points_per_click = 1
+points_per_click = 0.1
 title = "+ Pontos / clique"
 description = "Ganhe mais pontos para cada clique =D"
 cost = 10.0
