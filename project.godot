@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Chatomon-clicker"
-run/main_scene="res://Chatomon/chatomon_viewport.tscn"
+config/name="Chatomon Clicker"
+run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
