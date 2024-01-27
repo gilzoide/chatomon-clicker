@@ -1,7 +1,9 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://clallafxvyok0"]
+[gd_resource type="Resource" script_class="ScoreResource" load_steps=2 format=3 uid="uid://clallafxvyok0"]
 
-[ext_resource type="Script" path="res://Score/score_resource.gd" id="1_8642v"]
+[ext_resource type="Script" path="res://Score/score_resource.gd" id="1_dw7u4"]
 
 [resource]
-script = ExtResource("1_8642v")
-points = 0
+script = ExtResource("1_dw7u4")
+points = 0.0
+points_per_click = 1.0
+clicks_per_second = 0.0

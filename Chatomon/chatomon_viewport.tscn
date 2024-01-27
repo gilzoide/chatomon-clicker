@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://ibscpn5fugds"]
+[gd_scene load_steps=6 format=3 uid="uid://ibscpn5fugds"]
 
 [ext_resource type="PackedScene" uid="uid://dlht4f032gs0m" path="res://Score/score_ui.tscn" id="1_2760m"]
 [ext_resource type="Script" path="res://Chatomon/click_viewport.gd" id="1_ex540"]
 [ext_resource type="Resource" uid="uid://clallafxvyok0" path="res://Score/player_score.tres" id="3_y6ifp"]
+[ext_resource type="Texture2D" uid="uid://cu2l65j57mk1" path="res://Chatomon/openmoji_rolling-on-the-floor-laughing.png" id="4_f61fw"]
+
+[sub_resource type="Gradient" id="Gradient_k2ofm"]
+offsets = PackedFloat32Array(0, 0.5, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.996078, 1, 1, 1, 0)
 
 [node name="Chatomon-viewport" type="VBoxContainer"]
 anchors_preset = 15
@@ -33,4 +38,32 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="Smiles-anchor" type="Control" parent="Click/Clique-aqui"]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.2
+anchor_right = 0.5
+anchor_bottom = 0.2
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Smiles-particles" type="CPUParticles2D" parent="Click/Clique-aqui/Smiles-anchor"]
+emitting = false
+amount = 4
+one_shot = true
+randomness = 1.0
+texture = ExtResource("4_f61fw")
+direction = Vector2(0, -1)
+initial_velocity_min = 100.0
+initial_velocity_max = 500.0
+angular_velocity_max = 100.0
+angle_min = -90.0
+angle_max = 90.0
+color_ramp = SubResource("Gradient_k2ofm")
+
 [connection signal="gui_input" from="Click" to="Click" method="_on_gui_input"]
+[connection signal="on_click" from="Click" to="Click/Clique-aqui/Smiles-anchor/Smiles-particles" method="set_emitting" binds= [true]]
