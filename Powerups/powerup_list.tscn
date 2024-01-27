@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://byciqjfslrf5n"]
+
+[ext_resource type="Theme" uid="uid://b0d4h6xx06s8g" path="res://Powerups/new_theme.theme" id="1_anbjv"]
+[ext_resource type="PackedScene" uid="uid://g0aoxuc1enfi" path="res://Powerups/powerup_card_base.tscn" id="2_xju6d"]
+
+[node name="PowerupList" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_anbjv")
+
+[node name="PowerupCard" parent="." instance=ExtResource("2_xju6d")]
+layout_mode = 2
+
+[node name="PowerupCard2" parent="." instance=ExtResource("2_xju6d")]
+layout_mode = 2
+
+[node name="PowerupCard3" parent="." instance=ExtResource("2_xju6d")]
+layout_mode = 2

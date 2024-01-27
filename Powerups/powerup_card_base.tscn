@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://g0aoxuc1enfi"]
+
+[sub_resource type="Gradient" id="Gradient_tkw6i"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_toauw"]
+gradient = SubResource("Gradient_tkw6i")
+
+[node name="PowerupCard" type="HBoxContainer"]
+offset_right = 300.0
+offset_bottom = 64.0
+
+[node name="Icon" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+texture = SubResource("GradientTexture2D_toauw")
+stretch_mode = 5
+
+[node name="Texts" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Texts"]
+layout_mode = 2
+text = "Powerup maneiro"
+
+[node name="Description" type="Label" parent="Texts"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Vai encarar?"
