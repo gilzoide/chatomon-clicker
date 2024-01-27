@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgpy1qr2u2cox"]
+
+[ext_resource type="Script" path="res://Score/UI/score_per_click_ui.gd" id="1_vp3hx"]
+[ext_resource type="Resource" uid="uid://clallafxvyok0" path="res://Score/player_score.tres" id="2_4n7y5"]
+
+[node name="ScorePerClickUi" type="HBoxContainer"]
+script = ExtResource("1_vp3hx")
+score = ExtResource("2_4n7y5")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 2
+text = "Multiplier:"
+
+[node name="Value" type="Label" parent="."]
+layout_mode = 2
+text = "1"

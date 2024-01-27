@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ibscpn5fugds"]
+[gd_scene load_steps=9 format=3 uid="uid://ibscpn5fugds"]
 
 [ext_resource type="PackedScene" uid="uid://dlht4f032gs0m" path="res://Score/UI/score_ui.tscn" id="1_2760m"]
 [ext_resource type="Script" path="res://Chatomon/click_viewport.gd" id="1_ex540"]
+[ext_resource type="PackedScene" uid="uid://dgpy1qr2u2cox" path="res://Score/UI/score_per_click_ui.tscn" id="2_goil3"]
 [ext_resource type="PackedScene" uid="uid://xfgdcnrqhfeu" path="res://Score/UI/automatic_score_ui.tscn" id="2_rmemq"]
 [ext_resource type="PackedScene" uid="uid://rhmlabaysueg" path="res://Score/UI/automatic_score_timer.tscn" id="3_b0u18"]
 [ext_resource type="Resource" uid="uid://clallafxvyok0" path="res://Score/player_score.tres" id="3_y6ifp"]
@@ -19,6 +20,9 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="ScoreUi" parent="." instance=ExtResource("1_2760m")]
+layout_mode = 2
+
+[node name="ScorePerClickUi" parent="." instance=ExtResource("2_goil3")]
 layout_mode = 2
 
 [node name="AutomaticScoreUi" parent="." instance=ExtResource("2_rmemq")]
