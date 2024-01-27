@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci5qqi2nirl4s"]
+
+[ext_resource type="PackedScene" uid="uid://g0aoxuc1enfi" path="res://Powerups/UI/powerup_card_base.tscn" id="1_5f1nk"]
+[ext_resource type="Resource" uid="uid://dv5lhy820ien3" path="res://Powerups/powerup_clicks_per_second.tres" id="2_5ukpg"]
+
+[node name="PowerupCardClicksPerSecond" instance=ExtResource("1_5f1nk")]
+powerup = ExtResource("2_5ukpg")
+
+[node name="Icon" parent="." index="0"]
+flip_h = true

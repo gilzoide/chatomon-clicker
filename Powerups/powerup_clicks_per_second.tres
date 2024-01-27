@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PowerUpClicksPerSecond" load_steps=2 format=3 uid="uid://dv5lhy820ien3"]
+
+[ext_resource type="Script" path="res://Powerups/powerup_clicks_per_second.gd" id="1_uwemi"]
+
+[resource]
+script = ExtResource("1_uwemi")
+clicks_per_second = 0.1
+title = "+ Cliques / segundo"
+description = "Clica sozinho pra você, UHUL!"
+cost = 50.0

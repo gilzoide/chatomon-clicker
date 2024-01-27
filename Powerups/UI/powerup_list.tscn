@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://byciqjfslrf5n"]
+[gd_scene load_steps=4 format=3 uid="uid://byciqjfslrf5n"]
 
 [ext_resource type="Theme" uid="uid://b0d4h6xx06s8g" path="res://Powerups/UI/powerup_list_theme.theme" id="1_anbjv"]
 [ext_resource type="PackedScene" uid="uid://xrx7gff5t73i" path="res://Powerups/UI/powerup_card_points_per_click.tscn" id="2_8tg6x"]
+[ext_resource type="PackedScene" uid="uid://ci5qqi2nirl4s" path="res://Powerups/UI/powerup_card_clicks_per_second.tscn" id="2_x61ol"]
 
 [node name="PowerupList" type="GridContainer"]
 anchors_preset = 15
@@ -11,5 +12,8 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_anbjv")
 
-[node name="PowerupCard" parent="." instance=ExtResource("2_8tg6x")]
+[node name="PowerupCardPointsPerClick" parent="." instance=ExtResource("2_8tg6x")]
+layout_mode = 2
+
+[node name="PowerupCardClicksPerSecond" parent="." instance=ExtResource("2_x61ol")]
 layout_mode = 2
