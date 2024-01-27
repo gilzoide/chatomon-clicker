@@ -72,5 +72,4 @@ angle_min = -90.0
 angle_max = 90.0
 color_ramp = SubResource("Gradient_k2ofm")
 
-[connection signal="gui_input" from="Click" to="Click" method="_on_gui_input"]
 [connection signal="on_click" from="Click" to="Click/Clique-aqui/Smiles-anchor/Smiles-particles" method="set_emitting" binds= [true]]
